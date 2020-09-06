@@ -1,7 +1,7 @@
 const express = require("express");
 const mangaRoute = express();
 const router = express.Router();
-const MangaController = require("../controllers/mangaController");
+const {MangaController} = require("../controllers/index");
 
 router
   .get("/popular", MangaController.getPopularManga)
