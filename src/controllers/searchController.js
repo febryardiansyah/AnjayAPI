@@ -1,13 +1,12 @@
-const cheerio = require("cheerio");
-const BaseService = require("../helpers/axiosService");
+const Controller = require("../helpers/controller");
 
-class SearchController extends BaseService {
+class SearchController extends Controller {
   search = async (req, res) => {
     const { query } = req.params;
     const page = req.params.page === undefined ? 1 : req.params.page;
     try {
       const response = await super.request(`search?q=${query}&a=&p=${page}`);
-      const $ = cheerio.load(response.data);
+      const $ = super.load(response.data);
       const obj = {};
       let manga_list = [];
 

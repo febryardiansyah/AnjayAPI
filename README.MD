@@ -28,9 +28,9 @@ AnjayAPI is A Rest API Manga Reader that built with nodejs and provides manga wi
     - [ ] Language List
     - [ ] Manga By Language
 
-- [ ] Detail Manga
-    - [ ] Detail
-    - [ ] Chapter List
+- [x] Detail Manga
+    - [x] Detail
+    - [x] Chapter List
 
 - [ ] Chapter Image
 

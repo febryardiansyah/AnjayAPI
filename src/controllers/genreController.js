@@ -1,11 +1,10 @@
 const BaseGetPage = require("../helpers/getPage");
-const cheerio = require("cheerio");
 
 class GenreController extends BaseGetPage {
   getGenreList = async (req, res) => {
     try {
       const response = await super.request("browse");
-      const $ = cheerio.load(response.data);
+      const $ = super.load(response.data);
       const genreList = [];
       const obj = {};
 

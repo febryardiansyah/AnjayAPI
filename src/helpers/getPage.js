@@ -1,12 +1,11 @@
-const cheerio = require("cheerio");
-const BaseService = require("./axiosService");
+const Controller = require("./controller");
 
-class BaseGetPage extends BaseService {
+class BaseGetPage extends Controller {
 
   async getPage(req, res, url) {
     try {
       const response = await this.request(url);
-      const $ = cheerio.load(response.data);
+      const $ = super.load(response.data);
       let obj = {};
       let manga_list = [];
 

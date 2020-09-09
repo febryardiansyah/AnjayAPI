@@ -5,7 +5,7 @@ class MangaController extends BaseGetPage {
   getPopularManga = async (req, res) => {
     try {
       const response = await super.request();
-      const $ = cheerio.load(response.data);
+      const $ = super.load(response.data);
       let obj = {};
       let manga_list = [];
       
