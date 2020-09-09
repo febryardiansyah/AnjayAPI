@@ -4,7 +4,7 @@ const BaseService = require("../helpers/axiosService");
 class SearchController extends BaseService {
   search = async (req, res) => {
     const { query } = req.params;
-    const page = req.params.page === undefined ? "" : req.params.page;
+    const page = req.params.page === undefined ? 1 : req.params.page;
     try {
       const response = await super.request(`search?q=${query}&a=&p=${page}`);
       const $ = cheerio.load(response.data);

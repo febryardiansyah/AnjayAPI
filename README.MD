@@ -13,12 +13,12 @@ AnjayAPI is A Rest API Manga Reader that built with nodejs and provides manga wi
     - [x] Manhwa List
     - [x] Webtoon List
 
-- [ ] Search
-    - [ ] Manga by Query search
+- [x] Search
+    - [x] Manga by Query search
 
 - [ ] Genres
     - [ ] Genre List
-    - [ ] Manga By Genre
+    - [x] Manga By Genre
 
 - [ ] Status
     - [ ] Status List

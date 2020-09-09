@@ -1,10 +1,10 @@
 const express = require('express')
-const searchController = require('../controllers/searchController')
+const { SearchController } = require('../controllers')
 const searchRoute = express()
 const router = express.Router()
 
-router.get('/search/:query/page/:page',searchController.search)
+router.get('/search/:query/page/:page',SearchController.search)
 
-searchRoute.use(router)
+searchRoute.use('/',router)
 
 module.exports = searchRoute

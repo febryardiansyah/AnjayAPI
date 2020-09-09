@@ -2,7 +2,7 @@
   "name": "anjay-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start":"MODE=PRODUCTION node server.js",
     "dev":"MODE=DEVELOPMENT nodemon server.js"
